@@ -1,17 +1,18 @@
-import "./Footer.css";
+import "./FooterBasics.css";
+import "./FooterTablet.css";
 
 const Footer = () => {
   return (
     <>
-        <footer className="generic-footer">
+        <footer className="Generic-Footer">
 
             <section className="Newsletter-Footer">
                 <h3>Newsletter</h3>
                 <p>Sign up to be informed about our work and how you can help, such as fundraising, campaigning and events. You can unsubscribe at any time.</p>
                 
-                <form className="subscribe-footer-form">
-                    <input type="email" placeholder="Enter your email here"></input>
-                    <button type="submit">Subscribe</button>
+                <form className="Subscribe-Footer-Form">
+                    <input type="email" placeholder="Enter your email here" />
+                    <button type="submit">Subscribe!</button>
                 </form>
             </section>
 
