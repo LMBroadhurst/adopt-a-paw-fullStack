@@ -3,7 +3,8 @@
 .generic-footer,
 .SocialMedia-Footer,
 .Newsletter-Footer,
-.Legal-Footer {
+.Legal-Footer,
+.About-Us-Footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -26,6 +26,16 @@ const Footer = () => {
                 </ul>
             </section>
 
+            <section className="About-Us-Footer">
+                <h3>About Us</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Our History</li>
+                    <li>Careers</li>
+                    <li>FAQ</li>
+                </ul>
+            </section>
+
             <section className="Legal-Footer">
                 <h3>Legal</h3>
                 <ul>
