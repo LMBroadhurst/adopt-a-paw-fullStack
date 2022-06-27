@@ -16,34 +16,38 @@ const Footer = () => {
                 </form>
             </section>
 
-            <section className="SocialMedia-Footer">
-                <h3>Social Media</h3>
-                <ul>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Snapchat</li>
-                    <li>TikTok</li>
-                </ul>
-            </section>
+            <section className="Social-About-Legal-Container">
 
-            <section className="About-Us-Footer">
-                <h3>About Us</h3>
-                <ul>
-                    <li>Contact Us</li>
-                    <li>Our History</li>
-                    <li>Careers</li>
-                    <li>FAQ</li>
-                </ul>
-            </section>
+                <section className="SocialMedia-Footer">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Snapchat</li>
+                        <li>TikTok</li>
+                    </ul>
+                </section>
 
-            <section className="Legal-Footer">
-                <h3>Legal</h3>
-                <ul>
-                    <li>Terms and Conditions</li>
-                    <li>Cookies</li>
-                    <li>Privacy Notice</li>
-                </ul>
+                <section className="About-Us-Footer">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Our History</li>
+                        <li>Careers</li>
+                        <li>FAQ</li>
+                    </ul>
+                </section>
+
+                <section className="Legal-Footer">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>Terms and Conditions</li>
+                        <li>Cookies</li>
+                        <li>Privacy Notice</li>
+                    </ul>
+                </section>
+
             </section>
 
         </footer>
