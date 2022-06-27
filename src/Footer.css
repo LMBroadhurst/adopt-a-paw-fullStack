@@ -1,0 +1,57 @@
+/* Positioning */
+
+.generic-footer,
+.SocialMedia-Footer,
+.Newsletter-Footer,
+.Legal-Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 0.5rem;
+}
+
+.subscribe-footer-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colouring and final touches*/
+
+.generic-footer {
+    background-color: #003E1F;
+    color: white;
+}
+
+.generic-footer h3 {
+    color: #E07A5F;
+    font-size: 1.4rem;
+    padding-bottom: 0.125rem;
+}
+
+.subscribe-footer-form>button {
+    background-color: #E07A5F;
+    padding: 0.25rem;
+    border-radius: 0.125rem;
+}
+
+.subscribe-footer-form>button,
+.subscribe-footer-form>input {
+    margin: 0.5rem;
+}
+
+.subscribe-footer-form>button:hover {
+    background-color: #e3562f;
+    cursor: pointer;
+}
+
+.subscribe-footer-form>input {
+    border: 1px solid black;
+    padding: 0.25rem;
+    border-radius: 0.125rem;
+    background-color: white;
+    color: black;
+}
