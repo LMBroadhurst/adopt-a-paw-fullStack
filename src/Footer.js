@@ -25,13 +25,11 @@ const Footer = () => {
         </section>
 
         <section className="Legal-Footer">
-            <h3>Social Media</h3>
+            <h3>Legal</h3>
             <ul>
-                <li>Twitter</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Snapchat</li>
-                <li>TikTok</li>
+                <li>Terms and Conditions</li>
+                <li>Cookies</li>
+                <li>Privacy Notice</li>
             </ul>
         </section>
 
