@@ -3,10 +3,15 @@ import "./OrgansFiltTablet+.css";
 
 const OrganisationFilter = () => {
 
-    const toggleStyle = () => {
-        const input = document.getElementsByClassName("Filt-Input-Org");
+    const checkInput = () => {
+        const input = document.querySelector("#LCL-Input");
 
-       input.style.backgroundColor = "blue";
+        console.log(input.value)
+
+        if (input.value) {
+            console.log("Hello World!")
+            input.style.backgroundColor = "blue";
+        }
     }
 
   return (
@@ -18,12 +23,12 @@ const OrganisationFilter = () => {
             <form className="Org-Filter-Form">
 
                 <div className="Name-Check-Label">
-                    <input type="text" className="Filt-Input-Org" onChange={toggleStyle} />
+                    <input type="text" className="Filt-Input-Org" />
                     <label htmlFor="Org-Name-Filt">Name</label>
                 </div>
                 
                 <div className="Location-Check-Label">
-                    <input type="text" className="Filt-Input-Org" onChange={toggleStyle} />
+                    <input id="LCL-Input" type="text" className="Filt-Input-Org" onChange={checkInput}/>
                     <label>Location</label>
                 </div>
                 
