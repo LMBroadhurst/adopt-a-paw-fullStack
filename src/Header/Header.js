@@ -40,7 +40,7 @@ const Header = () => {
             <span className="Account-Link">Account</span>
 
             <button type="button" onClick={toggleMenuDisplay} className="Menu-Button-Header"><FontAwesomeIcon icon={faBars} /></button>
-            
+            <p>button changed</p>
         </header>
 
         <ul className="ScrollDown-Menu">
@@ -51,7 +51,6 @@ const Header = () => {
           <li>News</li>
         </ul>
 
-        <p>Branch Change</p>
 
     </>
   )
