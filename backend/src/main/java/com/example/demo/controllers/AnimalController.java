@@ -64,6 +64,14 @@ public class AnimalController {
         }
     }
 
+    @GetMapping("/animal/{id}")
+    public ResponseEntity findByID(@PathVariable Long id){
+        Optional<Animal> animalOptional = animalService.findByID(id);
+        if (animalOptional.isPresent()){
+            return ResponseEntity.ok().body(animalOptional.get());
+        }
+        return ResponseEntity.notFound().build();
+    }
 
     // UPDATE - PUT
     @PutMapping("/animal/{id}")
