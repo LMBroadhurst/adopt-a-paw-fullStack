@@ -42,6 +42,18 @@
 /* Hiding Tablet+ Elements */
 
 .Expanded-Navbar-Header,
-.Account-Link {
+.Account-Link,
+.Menu-Dropdown-List {
     display: none;
+}
+
+/* DropDown Menu */
+
+.Menu-Dropdown-List {
+    z-index: 1;
+}
+
+.Dropdown-Button-Header:hover .Menu-Dropdown-List {
+    display: flex;
+    flex-direction: column;
 }

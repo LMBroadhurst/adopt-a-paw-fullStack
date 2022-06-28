@@ -3,7 +3,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import PawLogo from "./Images/white-paw-print-transparent-background-17.png";
 
 import "./Header_Stylesheets/HeaderBasics.css";
-import "./Header_Stylesheets/HeaderTablet.css";
+import "./Header_Stylesheets/HeaderTablet+.css";
 
 const Header = () => {
   return (
@@ -24,9 +24,22 @@ const Header = () => {
               </ul>
             </nav>
 
-            <span className="DropDown-Button-Header"><FontAwesomeIcon icon={faBars} /></span>
-
             <span className="Account-Link">Account</span>
+
+            <section className="Dropdown-Button-Header">
+
+              <span className="Menu-Button-Header"><FontAwesomeIcon icon={faBars} /></span>
+
+              <ul className="Menu-Dropdown-List">
+                <li>Adopt</li>
+                <li>Animals</li>
+                <li>Organisations</li>
+                <li>Success Stories</li>
+                <li>News</li>
+              </ul>
+
+            </section>
+            
 
         </header>
     </>
