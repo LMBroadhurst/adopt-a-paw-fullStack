@@ -17,7 +17,7 @@ function App() {
         <Footer />
       </Router>
       <Header />
-      <Display_Carousel />
+      
       <Footer />
     </>
   );
