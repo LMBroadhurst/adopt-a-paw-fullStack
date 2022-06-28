@@ -15,6 +15,6 @@ INSERT INTO customer_preferences_mapper (species_id,customer_id) VALUES (2,1);
 
 INSERT INTO animals (species_id) VALUES (1);
 
-INSERT INTO applications (application_type_id,animal_id,customer_id) VALUES (1,1,1);
+--INSERT INTO applications (application_type_id,animal_id,customer_id) VALUES (1,1,1);
 
 

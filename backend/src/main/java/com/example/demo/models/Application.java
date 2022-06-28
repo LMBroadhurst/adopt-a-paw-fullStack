@@ -23,6 +23,10 @@ public class Application {
 
     private Long application_type_id;
 
+    public Application(){}
+
+
+
     public Long getId() {
         return id;
     }

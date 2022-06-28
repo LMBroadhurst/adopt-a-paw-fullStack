@@ -27,4 +27,28 @@ public class Animal {
     public Animal() {
 
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Integer getSpecies_id() {
+        return species_id;
+    }
+
+    public void setSpecies_id(Integer species_id) {
+        this.species_id = species_id;
+    }
+
+    public List<Application> getApplication() {
+        return application;
+    }
+
+    public void setApplication(List<Application> application) {
+        this.application = application;
+    }
 }
