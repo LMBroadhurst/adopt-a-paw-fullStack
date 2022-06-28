@@ -18,3 +18,6 @@ INSERT INTO animals (species_id) VALUES (1);
 --INSERT INTO applications (application_type_id,animal_id,customer_id) VALUES (1,1,1);
 
 
+--INSERT INTO sex VALUES ('Male')
+--INSERT INTO sex VALUES ('Female')
+--INSERT INTO sex VALUES ('Unknown')
