@@ -19,7 +19,6 @@ public class Animal {
 
     private Integer age;
 
-    //make this enum
     private String breed;
 
     // make this enum

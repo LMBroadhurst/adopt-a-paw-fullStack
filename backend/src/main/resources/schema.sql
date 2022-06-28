@@ -33,3 +33,12 @@ CREATE TABLE customer_preferences_mapper (
 
 
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES animal_types(id);
+
+
+CREATE TYPE gender AS ENUM (
+'Male',
+'Female',
+'Unknown'
+);
+
+ALTER TABLE animals ADD TYPE breed;
