@@ -23,7 +23,7 @@ public class Animal {
 
     private Integer age;
 
-    @Column(name="breed", columnDefinition = "String default UNKNOWN")
+    @Column(name="breed", columnDefinition = "varchar(255) default 'UNKNOWN'")
     private String breed;
 
     @Column
