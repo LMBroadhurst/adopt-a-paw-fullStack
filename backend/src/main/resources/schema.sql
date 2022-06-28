@@ -35,8 +35,9 @@ CREATE TABLE customer_preferences_mapper (
 );
 
 
-ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES animal_types(id);
 
+ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES animal_types(id);
+ALTER TABLE animals ADD FOREIGN KEY (organisation_id) REFERENCES organisations(id);
 
 CREATE TYPE application_status AS ENUM (
 
