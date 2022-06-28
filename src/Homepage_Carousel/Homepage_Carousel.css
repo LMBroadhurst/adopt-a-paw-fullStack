@@ -74,3 +74,12 @@
       justify-content: center;
       align-items: center;
   }
+
+  .zoom_image {
+    box-shadow: 0 4px 8px 0 rgba(228, 224, 224, 0.37), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s;
+  }
+  
+  .zoom_image:hover {
+    transform: scale(1.5);
+  }
