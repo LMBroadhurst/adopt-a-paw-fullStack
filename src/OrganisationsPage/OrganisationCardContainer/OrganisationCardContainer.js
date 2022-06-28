@@ -1,5 +1,7 @@
 import BatterseaLogo from "../images/battersea-logo.png";
 import "./OrganisationCardContainerBasic.css";
+import "./OrganCardContTablet.css";
+import "./OrganCardContLaptop+.css"
 
 const OrganisationCardContainer = () => {
   return (
