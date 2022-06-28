@@ -1,0 +1,40 @@
+/* Positioning */
+
+.Header-Mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+
+/* Colouring and Text */
+
+.Header-Mobile {
+    background-color: #003E1F;
+    color: white;
+    font-family: 'Mitr', sans-serif;
+}
+
+.AAP-Header-Title {
+    font-size: 2rem;
+}
+
+.DropDown-Button-Header {
+    font-size: 1.8rem;
+}
+
+
+
+/* Image Formatting */
+
+.Logo-Header {
+    height: 2.5rem;
+    width: 2.5rem;
+
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.25rem;
+    border: 2px black solid;
+}

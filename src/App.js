@@ -1,7 +1,11 @@
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+
 function App() {
   return (
     <>
-      <h1>Hello and welcome to Adopt a Paw!</h1>
+      <Header />
+      <Footer />
     </>
   );
 }
