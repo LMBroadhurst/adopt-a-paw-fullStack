@@ -8,6 +8,10 @@ INSERT INTO application_types (application_status) VALUES('PENDING');
 INSERT INTO application_types (application_status) VALUES('ACCEPTED');
 INSERT INTO application_types (application_status) VALUES('REJECTED');
 
+--INSERT INTO sex VALUES ('Male')
+--INSERT INTO sex VALUES ('Female')
+--INSERT INTO sex VALUES ('Unknown')
+
 INSERT INTO customers (age,first_name,last_name,location, previous_adoptions) VALUES (23,'Cem','Gurhan','London', True);
 INSERT INTO customers (age,first_name,last_name,location, previous_adoptions) VALUES (26,'Kieran','Sandford','Manchester', True);
 INSERT INTO customers (age,first_name,last_name,location, previous_adoptions) VALUES (24,'Edward','Todd','St Albans', False);
@@ -56,16 +60,5 @@ INSERT INTO applications (application_type_id, animal_id, customer_id) VALUES (2
 INSERT INTO applications (application_type_id, animal_id, customer_id) VALUES (2,1,2);
 INSERT INTO applications (application_type_id, animal_id, customer_id) VALUES (3,1,4);
 INSERT INTO applications (application_type_id, animal_id, customer_id) VALUES (3,1,5);
-
-
-
-
-
-
-
-
-
-
-
 
 
