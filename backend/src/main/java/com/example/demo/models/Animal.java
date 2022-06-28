@@ -21,8 +21,8 @@ public class Animal {
 
     private String breed;
 
-    // make this enum
-    private String gender;
+    @Column
+    private String sex;
 
     private String location;
 
@@ -42,13 +42,13 @@ public class Animal {
     }
 
     // arg constructor
-    public Animal (Long id, String name, Integer species_id, Integer age, String breed, String gender, String location, String organisation, Integer organisation_id, boolean reserved, boolean adopted) {
+    public Animal (Long id, String name, Integer species_id, Integer age, String breed, String sex, String location, String organisation, Integer organisation_id, boolean reserved, boolean adopted) {
         this.id = id;
         this.name = name;
         this.species_id = species_id;
         this.age = age;
         this.breed = breed;
-        this.gender = gender;
+        this.sex = sex;
         this.location = location;
         this.organisation = organisation;
         this.organisation_id = organisation_id;
@@ -99,12 +99,12 @@ public class Animal {
         this.breed = breed;
     }
 
-    public String getGender() {
-        return gender;
+    public String getSex() {
+        return sex;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public String getLocation() {

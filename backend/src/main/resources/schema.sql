@@ -1,9 +1,7 @@
+DROP TABLE IF EXISTS customer_preferences_mapper;
 DROP TABLE IF EXISTS animal_types;
+--DROP TYPE IF EXISTS sex;
 DROP TYPE IF EXISTS species_types;
-
-
-
-
 
 
 CREATE TYPE species_types AS ENUM (
@@ -35,10 +33,10 @@ CREATE TABLE customer_preferences_mapper (
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES animal_types(id);
 
 
-CREATE TYPE gender AS ENUM (
-'Male',
-'Female',
-'Unknown'
-);
-
-ALTER TABLE animals ADD TYPE breed;
+--CREATE TYPE sex AS ENUM (
+--'Male',
+--'Female',
+--'Unknown'
+--);
+--
+--ALTER TABLE animals ADD TYPE sex REFERENCES sex;
