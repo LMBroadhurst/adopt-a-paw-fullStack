@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS customer_preferences_mapper;
 DROP TABLE IF EXISTS animal_types;
 DROP TYPE IF EXISTS species_types;
 
