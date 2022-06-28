@@ -66,6 +66,4 @@
 
     display: none;
     flex-direction: column;
-
-    transition: height 2s;
 }

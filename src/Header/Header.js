@@ -6,6 +6,19 @@ import "./Header_Stylesheets/HeaderBasics.css";
 import "./Header_Stylesheets/HeaderTablet+.css";
 
 const Header = () => {
+
+  const toggleMenuDisplay = () => {
+
+    const menu = document.querySelector(".ScrollDown-Menu");
+
+    if (menu.style.display === "none") {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+
+  }
+
   return (
     <>
         <header className="Header-Mobile">
