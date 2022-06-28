@@ -9,9 +9,11 @@ function App() {
     <>
       <Router>
         <Header />
+
           <Routes>
             <Route path ='/' exact element={<Home />}/>
           </Routes>
+          
         <Footer />
       </Router>
     </>

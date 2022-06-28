@@ -38,3 +38,39 @@
     padding: 0.25rem;
     border: 2px black solid;
 }
+
+/* Hiding Tablet+ Elements */
+
+.Expanded-Navbar-Header,
+.Account-Link,
+.Menu-Dropdown-List {
+    display: none;
+}
+
+
+/* DropDown Menu */
+
+.Menu-Button-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    font-size: 1.4rem;
+}
+
+.ScrollDown-Menu {
+    background-color: #003E1F;
+    color: white;
+    text-align: center;
+    padding-bottom: 0.5rem;
+
+    display: none;
+    flex-direction: column;
+
+    transition: display 2s;
+    height: 150px;
+}
+
+.Header-Navbar-Transition {
+    transition: all 1s ease-in;
+}

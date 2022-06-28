@@ -85,3 +85,7 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+html {
+    font-family: 'Mitr', sans-serif;
+}
