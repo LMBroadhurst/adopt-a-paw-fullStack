@@ -32,9 +32,14 @@ const Header = () => {
             <nav className="Expanded-Navbar-Header">
               <ul>
                 <li>Adopt</li>
+                <li>|</li>
                 <li>Animals</li>
                 <li><Link to="/organisations">Organisations</Link></li>
+                <li>|</li>
+                <li>Organisations</li>
+                <li>|</li>
                 <li>Success Stories</li>
+                <li>|</li>
                 <li>News</li>
               </ul>
             </nav>

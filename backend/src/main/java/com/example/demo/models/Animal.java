@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 
 import javax.persistence.*;
-
 import java.util.List;
 
 @Entity
@@ -16,25 +15,26 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "age")
+    private int age;
+
+    @Column(name = "sex_id")
+    private Long sex_id;
+
+    @Column(name = "location")
+    private String location;
+
+    @Column(name = "organisation_id")
+    private Integer organisation_id;
 
     @Column(name = "species_id")
     private Integer species_id;
 
-    private Integer age;
-
     @Column(name="breed", columnDefinition = "varchar(255) default 'UNKNOWN'")
     private String breed;
-
-    @Column
-    private String sex;
-
-    private String location;
-
-
-
-    @Column
-    private Integer organisation_id;
 
     @Column(name = "reserved" , columnDefinition = "boolean default false")
     private boolean reserved;
@@ -42,17 +42,13 @@ public class Animal {
     @Column(name = "adopted" , columnDefinition = "boolean default false")
     private boolean adopted;
 
-
-
     @JsonIgnoreProperties({"animal"})
     @OneToMany(mappedBy = "animal", cascade = CascadeType.ALL)
 
     private List<Application> application;
 
-
-
     // no arg constructor
-    
+
     public Animal() {
     }
 
@@ -63,16 +59,13 @@ public class Animal {
         this.species_id = species_id;
         this.age = age;
         this.breed = breed;
-        this.sex = sex;
+
         this.location = location;
 
         this.organisation_id = organisation_id;
         this.reserved = reserved;
         this.adopted = adopted;
     }
-
-    // getters + setters
-
 
     public Long getId() {
         return id;
@@ -90,14 +83,56 @@ public class Animal {
         this.name = name;
     }
 
-
-
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+
+
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Boolean getReserved() {
+        return reserved;
+    }
+
+    public void setReserved(Boolean reserved) {
+        this.reserved = reserved;
+    }
+
+
+    public Boolean getAdopted() {
+        return adopted;
+    }
+
+    public void setAdopted(Boolean adopted) {
+        this.adopted = adopted;
+    }
+
+    public Integer getOrganisation_id() {
+        return organisation_id;
+    }
+
+    public void setOrganisation_id(Integer organisation_id) {
+        this.organisation_id = organisation_id;
+    }
+
+    public Integer getSpecies_id() {
+        return species_id;
+    }
+
+    public void setSpecies_id(Integer species_id) {
+        this.species_id = species_id;
     }
 
     public String getBreed() {
@@ -108,58 +143,6 @@ public class Animal {
         this.breed = breed;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-
-
-    public Integer getOrganisation_id() {
-        return organisation_id;
-    }
-
-    public void setOrganisation_id(Integer organisation_id) {
-        this.organisation_id = organisation_id;
-    }
-
-    public boolean isReserved() {
-        return reserved;
-    }
-
-    public void setReserved(boolean reserved) {
-        this.reserved = reserved;
-    }
-
-    public boolean isAdopted() {
-        return adopted;
-    }
-
-    public void setAdopted(boolean adopted) {
-        this.adopted = adopted;
-    }
-
-
-
-    public Integer getSpecies_id() {
-        return species_id;
-    }
-
-    public void setSpecies_id(Integer species_id) {
-        this.species_id = species_id;
-    }
-
     public List<Application> getApplication() {
         return application;
     }
@@ -167,4 +150,5 @@ public class Animal {
     public void setApplication(List<Application> application) {
         this.application = application;
     }
+
 }

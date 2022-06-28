@@ -15,7 +15,7 @@ import java.util.Optional;
 public class AnimalController {
 
 
-    @Autowired
+
     private AnimalRepo animalRepo;
     private AnimalService animalService;
 
@@ -42,15 +42,7 @@ public class AnimalController {
         return new ResponseEntity<>(animalRepo.findAll(), HttpStatus.OK);
     }
 
-    // get animal by species //
 
-//    @GetMapping("/animal/species_id")
-//    public ResponseEntity<Optional<Animal>> getAnimalBySpeciesId (@RequestParam (required = true) Integer species_id) {
-//        Optional<Animal> chosen = animalRepo.findBy(species_id(species_id));
-//        return ResponseEntity
-//                .ok()
-//                .body(chosen);
-//    }
 
 
     // get animal by breed (finding like)
@@ -64,6 +56,14 @@ public class AnimalController {
         }
     }
 
+    @GetMapping("/animal/{id}")
+    public ResponseEntity findByID(@PathVariable Long id){
+        Optional<Animal> animalOptional = animalService.findByID(id);
+        if (animalOptional.isPresent()){
+            return ResponseEntity.ok().body(animalOptional.get());
+        }
+        return ResponseEntity.notFound().build();
+    }
 
     // UPDATE - PUT
     @PutMapping("/animal/{id}")
@@ -91,6 +91,18 @@ public class AnimalController {
         animalService.deleteAnimal(id);
     }
 
+    @GetMapping("findSpeciesByID/{id}")
+    public String findSpeciesByID(@PathVariable("id") Long id){
 
+        return animalService.findSpeciesByID(id);
+
+    }
+
+    @GetMapping("findSexByID/{id}")
+    public String findSexByID(@PathVariable("id") Long id){
+
+        return animalService.findSexByID(id);
+
+    }
 }
 

@@ -1,13 +1,11 @@
-
+DROP TABLE IF EXISTS sex_enums;
 DROP TABLE IF EXISTS customer_preferences_mapper;
 DROP TABLE IF EXISTS animal_types;
---DROP TYPE IF EXISTS sex;
-
 DROP TABLE IF EXISTS application_types;
 DROP TABLE IF EXISTS customer_preferences_mapper;
 DROP TABLE IF EXISTS animal_types;
+DROP TYPE IF EXISTS sex;
 DROP TYPE IF EXISTS application_status;
-
 DROP TYPE IF EXISTS species_types;
 
 
@@ -37,17 +35,25 @@ CREATE TABLE customer_preferences_mapper (
 );
 
 
+
 ALTER TABLE animals ADD FOREIGN KEY (species_id) REFERENCES animal_types(id);
+ALTER TABLE animals ADD FOREIGN KEY (organisation_id) REFERENCES organisations(id);
 
 
+CREATE TYPE sex AS ENUM (
+'Male',
+'Female',
+'Unknown'
+);
 
---CREATE TYPE sex AS ENUM (
---'Male',
---'Female',
---'Unknown'
---);
---
---ALTER TABLE animals ADD TYPE sex REFERENCES sex;
+CREATE TABLE sex_enums (
+
+    id SERIAL PRIMARY KEY,
+    sex sex
+
+);
+
+ALTER TABLE animals ADD FOREIGN KEY (sex_id) REFERENCES sex_enums(id);
 
 
 CREATE TYPE application_status AS ENUM (
