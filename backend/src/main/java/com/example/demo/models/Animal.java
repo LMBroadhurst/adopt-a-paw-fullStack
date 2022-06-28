@@ -1,7 +1,10 @@
 package com.example.demo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
+
+import java.util.List;
 
 @Entity
 @Table(name = "animals")
@@ -37,7 +40,15 @@ public class Animal {
 
 
 
+    @JsonIgnoreProperties({"animal"})
+    @OneToMany(mappedBy = "animal", cascade = CascadeType.ALL)
+
+    private List<Application> application;
+
+
+
     // no arg constructor
+    
     public Animal() {
     }
 

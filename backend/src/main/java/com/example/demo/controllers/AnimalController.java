@@ -14,6 +14,7 @@ import java.util.Optional;
 @RestController
 public class AnimalController {
 
+
     @Autowired
     private AnimalRepo animalRepo;
     private AnimalService animalService;
@@ -89,5 +90,7 @@ public class AnimalController {
     public void deleteAnimal(@PathVariable(value = "id") Long id) {
         animalService.deleteAnimal(id);
     }
+
+
 }
 
