@@ -34,25 +34,18 @@
     padding-left: 0.5rem;
 }
 
-.Filt-Checkbox-Org {
+.Filt-Input-Org {
     border-radius: 0.25rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #E07A5F;
     cursor: pointer;
+    font-size: 1rem;
+    color: white;
+
+    transition: width 1s 0s ease-in-out;
 }
 
-.Filt-Checkbox-Org:checked {
-    background-color: #e35832;
-}
-
-.Filt-Checkbox-Org:checked::after {
-    font-family: FontAwesome;
-    content: "";
-    color: aliceblue;
-    font-size: 1.2rem;
-    display: block;
-    text-align: center;
-
-    padding-top: 0.1rem;
+.Filt-Input-Org:focus-within {
+    width: 10rem;
 }
