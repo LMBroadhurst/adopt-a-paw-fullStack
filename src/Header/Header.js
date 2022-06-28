@@ -5,6 +5,8 @@ import PawLogo from "./Images/white-paw-print-transparent-background-17.png";
 import "./Header_Stylesheets/HeaderBasics.css";
 import "./Header_Stylesheets/HeaderTablet+.css";
 
+import { NavLink as Link } from "react-router-dom";
+
 const Header = () => {
 
   const toggleMenuDisplay = () => {
@@ -31,7 +33,7 @@ const Header = () => {
               <ul>
                 <li>Adopt</li>
                 <li>Animals</li>
-                <li>Organisations</li>
+                <li><Link to="/organisations">Organisations</Link></li>
                 <li>Success Stories</li>
                 <li>News</li>
               </ul>
