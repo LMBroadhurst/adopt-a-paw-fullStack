@@ -11,10 +11,11 @@ public class ApplicationService {
     private AnimalService animalService;
     private CustomerService customerService;
 
-    ApplicationService(ApplicationRepo applicationRepo){
+    public ApplicationService(ApplicationRepo applicationRepo, AnimalService animalService, CustomerService customerService) {
         this.applicationRepo = applicationRepo;
+        this.animalService = animalService;
+        this.customerService = customerService;
     }
-
 
     public void addNewApplication(Long application_type_id, Long animal_id, Long customer_id) throws Exception{
 
