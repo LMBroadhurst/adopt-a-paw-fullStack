@@ -21,8 +21,8 @@ public class Animal {
     @Column(name = "age")
     private int age;
 
-    @Column(name = "sex")
-    private String sex;
+    @Column(name = "sex_id")
+    private Long sex_id;
 
     @Column(name = "location")
     private String location;
@@ -59,7 +59,7 @@ public class Animal {
         this.species_id = species_id;
         this.age = age;
         this.breed = breed;
-        this.sex = sex;
+
         this.location = location;
 
         this.organisation_id = organisation_id;
@@ -91,13 +91,8 @@ public class Animal {
         this.age = age;
     }
 
-    public String getSex() {
-        return sex;
-    }
 
-    public void setSex(String gender) {
-        this.sex = sex;
-    }
+
 
     public String getLocation() {
         return location;

@@ -14,5 +14,8 @@ public interface CustomerRepo extends JpaRepository<Customer,Long> {
     @Query(value = "SELECT species_id FROM customer_preferences_mapper WHERE customer_id = ?", nativeQuery = true)
     List<String> findCustomerPreferences(Long id);
 
+    @Query(value = "SELECT * FROM customers WHERE id = ?", nativeQuery = true)
+    Customer findCustomerByID(Long id);
+
 
 }

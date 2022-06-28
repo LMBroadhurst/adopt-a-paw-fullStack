@@ -26,15 +26,11 @@ public class AnimalService {
         if (animal.getSpecies_id() != null && !Objects.equals(animal.getSpecies_id(), species_id)) {
             animal.setSpecies_id(species_id);
         }
-        if (animal.getAge() != null && !Objects.equals(animal.getAge(), age)) {
-            animal.setAge(age);
-        }
+
         if (animal.getBreed() != null && !Objects.equals(animal.getBreed(), breed)) {
             animal.setBreed(breed);
         }
-        if (animal.getSex() != null && !Objects.equals(animal.getSex(), sex)) {
-            animal.setSex(sex);
-        }
+
         if (animal.getLocation() != null && !Objects.equals(animal.getLocation(), location)) {
             animal.setLocation(location);
         }
@@ -42,12 +38,7 @@ public class AnimalService {
         if (animal.getOrganisation_id() != null && !Objects.equals(animal.getOrganisation_id(), name)) {
             animal.setOrganisation_id(organisation_id);
         }
-        if (!animal.isReserved()) {
-            animal.setReserved(true || false);
-        }
-        if (!animal.isAdopted()) {
-            animal.setAdopted(true || false);
-        }
+
     }
 
     // DELETE ANIMAL METHOD
@@ -58,6 +49,14 @@ public class AnimalService {
                     "Animal with id: " + id + " does not exist!");
         }
         animalRepo.deleteById(id);
+    }
+
+    public String findSpeciesByID(Long id){
+        return animalRepo.findSpeciesByID(id);
+    }
+
+    public String findSexByID(Long id){
+        return animalRepo.findSexByID(id);
     }
 
     
