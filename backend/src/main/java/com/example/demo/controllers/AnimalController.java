@@ -51,6 +51,19 @@ public class AnimalController {
 //                .body(chosen);
 //    }
 
+
+    // get animal by breed (finding like)
+
+    @GetMapping("/animal/breed")
+    public ResponseEntity<List<Animal>> findByBreedLike(@RequestParam(required = false, name = "breed") String breed) {
+        if (breed != null) {
+            return new ResponseEntity<>(animalRepo.findByBreedLike(breed), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(animalRepo.findAll(), HttpStatus.OK);
+        }
+    }
+
+
     // UPDATE - PUT
     @PutMapping("/animal/{id}")
     public void updateAnimal(
@@ -68,6 +81,7 @@ public class AnimalController {
     ){
         animalService.updateAnimal(id, name, species_id, age, breed, sex, location, organisation, organisation_id, reserved, adopted);
     }
+
 
     // DELETE
 
