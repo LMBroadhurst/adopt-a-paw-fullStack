@@ -67,5 +67,10 @@
     display: none;
     flex-direction: column;
 
-    transition: height 2s;
+    transition: display 2s;
+    height: 150px;
+}
+
+.Header-Navbar-Transition {
+    transition: all 1s ease-in;
 }
