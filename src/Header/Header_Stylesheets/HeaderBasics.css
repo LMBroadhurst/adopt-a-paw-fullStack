@@ -47,6 +47,7 @@
     display: none;
 }
 
+
 /* DropDown Menu */
 
 .Menu-Button-Header {
@@ -57,29 +58,14 @@
     font-size: 1.4rem;
 }
 
-.Menu-Dropdown-List {
-    z-index: 1;
-}
-
-.Dropdown-Button-Header:hover .Menu-Dropdown-List {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-
-    color: white;
-}
-
-.Scrolldown-Menu {
+.ScrollDown-Menu {
     background-color: #003E1F;
     color: white;
     text-align: center;
-
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 
     display: none;
-}
+    flex-direction: column;
 
-.Account-Link:hover .Scrolldown-Menu {
-    display: flex;
+    transition: display 2s;
 }
