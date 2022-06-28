@@ -1,0 +1,21 @@
+.homepage-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    max-height: 600px;
+}
+
+.centred {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 7vw;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
