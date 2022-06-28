@@ -1,6 +1,7 @@
 package com.example.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 
 import javax.persistence.*;
 
@@ -22,6 +23,7 @@ public class Animal {
 
     private Integer age;
 
+    @Column(name="breed", columnDefinition = "String default UNKNOWN")
     private String breed;
 
     @Column
