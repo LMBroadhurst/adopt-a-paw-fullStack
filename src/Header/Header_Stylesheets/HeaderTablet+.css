@@ -23,6 +23,10 @@
         grid-column: 4;
     }
 
+    .Menu-Button-Header {
+        display: none;
+    }
+
     /* Sorting positioning and Details */
 
     .Tablet-Title-Header {
@@ -41,10 +45,6 @@
     .Expanded-Navbar-Header>ul>li {
         padding: 0 0.5rem;
         font-size: 1.4rem;
-    }
-
-    .DropDown-Button-Header {
-        display: none;
     }
 
     .Account-Link {

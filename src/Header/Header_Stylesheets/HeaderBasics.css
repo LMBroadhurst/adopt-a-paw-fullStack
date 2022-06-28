@@ -66,4 +66,20 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+
+    color: white;
+}
+
+.Scrolldown-Menu {
+    background-color: #003E1F;
+    color: white;
+    text-align: center;
+
+    padding-bottom: 1rem;
+
+    display: none;
+}
+
+.Account-Link:hover .Scrolldown-Menu {
+    display: flex;
 }

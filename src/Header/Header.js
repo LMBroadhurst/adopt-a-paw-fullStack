@@ -42,8 +42,6 @@ const Header = () => {
             
 
         </header>
-
-       
     </>
   )
 }
