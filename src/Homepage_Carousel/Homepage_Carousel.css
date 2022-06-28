@@ -1,5 +1,7 @@
 .carousel {
-    overflow: hidden
+    overflow: hidden;
+    position: relative;
+    align-items: center;
   }
   
   .inner {
@@ -61,13 +63,14 @@
  
   .leftButton {
      position: absolute;
-     left: 10%; top: 15%;
+     left: 10%; top: 50%;
   }
    .rightButton {
      position: absolute;
-     right: 10%; top: 15%;
+     right: 10%; top: 50%;
   }
 
   .center_table {
       justify-content: center;
+      align-items: center;
   }

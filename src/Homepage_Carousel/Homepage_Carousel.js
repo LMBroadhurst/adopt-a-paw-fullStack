@@ -26,7 +26,7 @@ const updateIndex = (newIndex) => {
     useEffect(() => {
         const interval = setInterval(() => {
             updateIndex(activeIndex + 1);
-        }, 5000);
+        }, 4000);
 
         return () => {
             if (interval) {

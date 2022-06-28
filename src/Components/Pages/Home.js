@@ -9,7 +9,7 @@ function Home() {
             <img src={process.env.PUBLIC_URL + '/familydog.jpeg'}/>
             <div className='centred'>Say Hello to Your New Best Friend</div>
         </div>
-        <div>
+        <div className='display_carousel'>
         <Display_Carousel />
         </div>
     </div>
