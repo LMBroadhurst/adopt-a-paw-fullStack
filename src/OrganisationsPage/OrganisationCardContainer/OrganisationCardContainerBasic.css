@@ -1,0 +1,25 @@
+.Organ-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E07A5F;
+    padding: 1rem 2rem;
+    margin: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    color: black;
+}
+
+.Organ-Img {
+    height: 150px;
+    border-radius: 0.3rem;
+}
+
+.Organ-Text-Div>h3 {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    padding-bottom: 0.4rem;
+}
+
+.Organ-Text-Div>p {
+    text-align: center;
+}

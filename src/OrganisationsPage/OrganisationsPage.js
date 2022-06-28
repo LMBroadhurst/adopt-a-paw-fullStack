@@ -1,3 +1,4 @@
+import OrganisationCardContainer from "./OrganisationCardContainer/OrganisationCardContainer.js";
 import OrganisationFilter from "./OrganisationFilter/OrganisationFilter.js";
 import "./OrganisationsPage.css";
 
@@ -10,6 +11,8 @@ const OrganisationsPage = () => {
             <h2>Organisations</h2>
 
             <OrganisationFilter />
+
+            <OrganisationCardContainer />
 
 
         </main>
