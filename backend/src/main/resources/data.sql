@@ -13,7 +13,10 @@ INSERT INTO customers (age,first_name,last_name,location) VALUES (23,'Cem','Gurh
 INSERT INTO customer_preferences_mapper (species_id,customer_id) VALUES (1,1);
 INSERT INTO customer_preferences_mapper (species_id,customer_id) VALUES (2,1);
 
---INSERT INTO animals (species_id) VALUES (1);
+INSERT INTO organisations (name) VALUES ('RSPCA');
+
+INSERT INTO animals (age,breed,location,name,organisation_id,sex,species_id)
+            VALUES (11,'Dodo','London','Dodo1',1,'Male',2);
 
 --INSERT INTO applications (application_type_id,animal_id,customer_id) VALUES (1,1,1);
 

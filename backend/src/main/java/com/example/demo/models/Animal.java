@@ -17,7 +17,7 @@ public class Animal {
 
     private String name;
 
-    @Column
+    @Column(name = "species_id")
     private Integer species_id;
 
     private Integer age;
@@ -29,7 +29,7 @@ public class Animal {
 
     private String location;
 
-    private String organisation;
+
 
     @Column
     private Integer organisation_id;
@@ -63,7 +63,7 @@ public class Animal {
         this.breed = breed;
         this.sex = sex;
         this.location = location;
-        this.organisation = organisation;
+
         this.organisation_id = organisation_id;
         this.reserved = reserved;
         this.adopted = adopted;
@@ -122,13 +122,7 @@ public class Animal {
         this.location = location;
     }
 
-    public String getOrganisation() {
-        return organisation;
-    }
 
-    public void setOrganisation(String organisation) {
-        this.organisation = organisation;
-    }
 
     public Integer getOrganisation_id() {
         return organisation_id;
