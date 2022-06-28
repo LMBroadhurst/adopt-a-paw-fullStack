@@ -68,4 +68,12 @@ public class AnimalController {
     ){
         animalService.updateAnimal(id, name, species_id, age, breed, sex, location, organisation, organisation_id, reserved, adopted);
     }
+
+    // DELETE
+
+    @DeleteMapping("/animal/{id}")
+    public void deleteAnimal(@PathVariable(value = "id") Long id) {
+        animalService.deleteAnimal(id);
+    }
 }
+

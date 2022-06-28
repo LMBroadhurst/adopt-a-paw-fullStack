@@ -16,6 +16,8 @@ public class AnimalService {
     private AnimalRepo animalRepo;
     @Transactional
 
+
+    // UPDATE ANIMAL METHOD
     public void updateAnimal(Long id, String name, Integer species_id, Integer age, String breed, String sex, String location, String organisation, Integer organisation_id, boolean reserved, boolean adopted) {
         Animal animal = animalRepo.findById(id).orElseThrow(() -> new IllegalStateException("Animal with " + id + " does not exist!"));
         if (animal.getName() != null && !Objects.equals(animal.getName(), name)) {
@@ -48,6 +50,16 @@ public class AnimalService {
         if (!animal.isAdopted()) {
             animal.setAdopted(true || false);
         }
+    }
+
+    // DELETE ANIMAL METHOD
+    public void deleteAnimal(Long id) {
+        boolean exists = animalRepo.existsById(id);
+        if (!exists) {
+            throw new IllegalStateException(
+                    "Animal with id: " + id + " does not exist!");
+        }
+        animalRepo.deleteById(id);
     }
 
     
