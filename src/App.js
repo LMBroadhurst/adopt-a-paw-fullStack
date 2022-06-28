@@ -2,8 +2,8 @@ import "./App.css"
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./Components/Pages/Home";
-import OrganisationsPage from "./Components/Pages/OrganisationsPage/OrganisationsPage.js";
+import Home from "./HomePage/Home"
+import OrganisationsPage from "./OrganisationsPage/OrganisationsPage";
 
 function App() {
   return (

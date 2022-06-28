@@ -16,7 +16,7 @@ const OrganisationFilter = () => {
                 </div>
                 
                 <div className="Location-Check-Label">
-                    <input type="checkbox" className="Filt-Checkbox-Org"/>
+                    <input type="checkbox" className="Filt-Checkbox-Org" />
                     <label>Location</label>
                 </div>
                 

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import "./Homepage_Carousel.css"
+import "./HomepageCarousel.css"
 
 
 export const CarouselItem = ({children, width}) => {

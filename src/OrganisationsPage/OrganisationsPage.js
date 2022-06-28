@@ -1,4 +1,4 @@
-import OrganisationFilter from "../../../OrganisationFilter/OrganisationFilter.js";
+import OrganisationFilter from "./OrganisationFilter/OrganisationFilter.js";
 import "./OrganisationsPage.css";
 
 

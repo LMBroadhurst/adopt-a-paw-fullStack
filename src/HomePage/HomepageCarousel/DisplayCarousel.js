@@ -1,9 +1,9 @@
-import Homepage_Carousel, {CarouselItem} from "./Homepage_Carousel"
+import HomepageCarousel, {CarouselItem} from "./HomepageCarousel"
 
-const Display_Carousel = () => {
+const DisplayCarousel = () => {
     return (
       <>
-        <Homepage_Carousel>
+        <HomepageCarousel>
         <CarouselItem>
           <table text-align="center">
             <tr>
@@ -43,11 +43,11 @@ const Display_Carousel = () => {
           
           </table>
           </CarouselItem>
-      </Homepage_Carousel>
+      </HomepageCarousel>
       </>
 
     );
 
     }
 
-export default Display_Carousel
+export default DisplayCarousel;

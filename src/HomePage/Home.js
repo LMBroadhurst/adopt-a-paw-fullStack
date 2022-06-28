@@ -1,16 +1,16 @@
 import React from 'react'
 import './Home.css';
-import Display_Carousel from '../../Homepage_Carousel/Display_Carousel';
+import DisplayCarousel from "./HomepageCarousel/DisplayCarousel";
 
 function Home() {
   return (
     <div>
         <div className='homepage-image'>
-            <img src={process.env.PUBLIC_URL + '/familydog.jpeg'}/>
+            <img src={process.env.PUBLIC_URL + '/familydog.jpeg'} alt="xyz"/>
             <div className='centred'>Say Hello to Your New Best Friend</div>
         </div>
         <div className='display_carousel'>
-        <Display_Carousel />
+        <DisplayCarousel />
         </div>
     </div>
   )
