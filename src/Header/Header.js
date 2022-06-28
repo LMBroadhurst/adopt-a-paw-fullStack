@@ -37,8 +37,6 @@ const Header = () => {
               </ul>
             </nav>
 
-            <span className="DropDown-Button-Header"><FontAwesomeIcon icon={faBars} /></span>
-
             <span className="Account-Link">Account</span>
 
             <button type="button" onClick={toggleMenuDisplay} className="Menu-Button-Header"><FontAwesomeIcon icon={faBars} /></button>
