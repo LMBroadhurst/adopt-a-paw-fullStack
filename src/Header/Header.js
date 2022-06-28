@@ -42,6 +42,15 @@ const Header = () => {
             <span className="Account-Link">Account</span>
 
         </header>
+
+        <ul className="ScrollDown-Menu">
+          <li>Adopt</li>
+          <li>Animals</li>
+          <li>Organisations</li>
+          <li>Success Stories</li>
+          <li>News</li>
+        </ul>
+
     </>
   )
 }
