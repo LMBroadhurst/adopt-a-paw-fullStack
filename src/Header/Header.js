@@ -42,6 +42,8 @@ const Header = () => {
 
             <span className="Account-Link">Account</span>
 
+            <h1>This is a test</h1>
+
         </header>
     </>
   )
