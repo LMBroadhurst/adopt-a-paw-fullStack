@@ -4,8 +4,13 @@ import Header from "./Header/Header";
 function App() {
   return (
     <>
-      <Header />
-      <Footer />
+      <Router>
+        <Header />
+          <Routes>
+            <Route />
+          </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
