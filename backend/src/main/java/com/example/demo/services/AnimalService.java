@@ -60,5 +60,7 @@ public class AnimalService {
         animalRepo.deleteById(id);
     }
 
-    
+    public Animal getAnimalByID(Long id) throws Exception{
+        return animalRepo.findByIdIs(id);
+    }
 }

@@ -14,4 +14,6 @@ public interface AnimalRepo extends JpaRepository <Animal, Long> {
 
     @Query(value = "SELECT * FROM animal WHERE breed LIKE %:breed%", nativeQuery = true)
     List<Animal> findByBreedLike(@Param("breed") String breed);
+
+    Animal findByIdIs(Long id);
 }
