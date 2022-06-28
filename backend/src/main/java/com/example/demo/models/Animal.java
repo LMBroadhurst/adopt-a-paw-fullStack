@@ -11,8 +11,11 @@ public class Animal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private Integer species_id;
+    private String name;
+
+    @Enumerated
+    private
+//    private Integer species_id;
 
     public Animal() {
 
