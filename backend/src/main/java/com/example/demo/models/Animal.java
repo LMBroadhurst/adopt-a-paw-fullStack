@@ -1,6 +1,7 @@
 package com.example.demo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 
 import javax.persistence.*;
 
@@ -17,11 +18,12 @@ public class Animal {
 
     private String name;
 
-    @Column
+    @Column(name = "species_id")
     private Integer species_id;
 
     private Integer age;
 
+    @Column(name="breed", columnDefinition = "varchar(255) default 'UNKNOWN'")
     private String breed;
 
     @Column
@@ -29,13 +31,15 @@ public class Animal {
 
     private String location;
 
-    private String organisation;
+
 
     @Column
     private Integer organisation_id;
 
+    @Column(name = "reserved" , columnDefinition = "boolean default false")
     private boolean reserved;
 
+    @Column(name = "adopted" , columnDefinition = "boolean default false")
     private boolean adopted;
 
 
@@ -61,7 +65,7 @@ public class Animal {
         this.breed = breed;
         this.sex = sex;
         this.location = location;
-        this.organisation = organisation;
+
         this.organisation_id = organisation_id;
         this.reserved = reserved;
         this.adopted = adopted;
@@ -86,13 +90,7 @@ public class Animal {
         this.name = name;
     }
 
-    public Integer getSpecies_id() {
-        return species_id;
-    }
 
-    public void setSpecies_id(Integer species_id) {
-        this.species_id = species_id;
-    }
 
     public Integer getAge() {
         return age;
@@ -126,13 +124,7 @@ public class Animal {
         this.location = location;
     }
 
-    public String getOrganisation() {
-        return organisation;
-    }
 
-    public void setOrganisation(String organisation) {
-        this.organisation = organisation;
-    }
 
     public Integer getOrganisation_id() {
         return organisation_id;
@@ -158,13 +150,7 @@ public class Animal {
         this.adopted = adopted;
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Integer getSpecies_id() {
         return species_id;

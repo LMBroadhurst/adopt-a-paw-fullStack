@@ -38,9 +38,7 @@ public class AnimalService {
         if (animal.getLocation() != null && !Objects.equals(animal.getLocation(), location)) {
             animal.setLocation(location);
         }
-        if (animal.getOrganisation() != null && !Objects.equals(animal.getOrganisation(), organisation)) {
-            animal.setOrganisation(organisation);
-        }
+
         if (animal.getOrganisation_id() != null && !Objects.equals(animal.getOrganisation_id(), name)) {
             animal.setOrganisation_id(organisation_id);
         }
