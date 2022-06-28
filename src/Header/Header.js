@@ -12,6 +12,7 @@ const Header = () => {
     const menu = document.querySelector(".ScrollDown-Menu");
 
     if (menu.style.display === "none") {
+      menu.classList.add("Header-Navbar-Transition")
       menu.style.display = "flex";
     } else {
       menu.style.display = "none";
