@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
 
+import com.example.demo.controllers.AnimalController;
 import com.example.demo.models.Animal;
 import com.example.demo.repositories.AnimalRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.Objects;
+import java.util.Optional;
 
 @Service
 public class AnimalService {
@@ -59,5 +61,8 @@ public class AnimalService {
         return animalRepo.findSexByID(id);
     }
 
-    
+
+    public Optional<Animal> findByID(Long id){
+        return animalRepo.findById(id);
+    }
 }
