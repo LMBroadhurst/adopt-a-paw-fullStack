@@ -60,7 +60,7 @@ const updateIndex = (newIndex) => {
                     </button>
 
                     <button
-                        class ="rightButton next round"
+                        className="rightButton next round"
                         onClick={() => {
                             updateIndex(activeIndex +1);
                         }}

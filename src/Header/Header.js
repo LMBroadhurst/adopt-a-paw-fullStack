@@ -27,7 +27,7 @@ const Header = () => {
            
             <img src={PawLogo} alt="Adopt A Paw Logo" className="Logo-Header"/>
             
-            <h1 className="AAP-Header-Title">Adopt A Paw</h1>
+            <Link to="/"><h1 className="AAP-Header-Title">Adopt A Paw</h1></Link>
 
             <nav className="Expanded-Navbar-Header">
               <ul>
