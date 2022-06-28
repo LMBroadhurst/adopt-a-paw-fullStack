@@ -1,5 +1,5 @@
 import HomepageCarousel, {CarouselItem} from "./HomepageCarousel"
-import "./Homepage_Carousel.css"
+import "./HomepageCarousel.css"
 
 const DisplayCarousel = () => {
     return (
