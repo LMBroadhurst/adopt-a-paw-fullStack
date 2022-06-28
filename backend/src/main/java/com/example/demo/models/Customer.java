@@ -1,6 +1,9 @@
 package com.example.demo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "customers")
@@ -22,6 +25,10 @@ public class Customer {
 
     @Column(name = "previous_adoptions" , columnDefinition = "boolean default false")
     private Boolean previousAdoptions;
+
+    @JsonIgnoreProperties({"customer"})
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    private List<Application> application;
 
     public String getFirstName() {
         return firstName;
