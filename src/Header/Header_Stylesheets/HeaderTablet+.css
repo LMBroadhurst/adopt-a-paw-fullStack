@@ -53,4 +53,8 @@
         justify-content: flex-end;
     }
 
+    .DropDown-Button-Header {
+        display: none;
+    }
+
 }

@@ -6,19 +6,6 @@ import "./Header_Stylesheets/HeaderBasics.css";
 import "./Header_Stylesheets/HeaderTablet+.css";
 
 const Header = () => {
-
-  const toggleMenuDisplay = () => {
-
-    const menu = document.querySelector(".ScrollDown-Menu");
-
-    if (menu.style.display === "none") {
-      menu.style.display = "flex";
-    } else {
-      menu.style.display = "none";
-    }
-
-  }
-
   return (
     <>
         <header className="Header-Mobile">
@@ -37,20 +24,11 @@ const Header = () => {
               </ul>
             </nav>
 
+            <span className="DropDown-Button-Header"><FontAwesomeIcon icon={faBars} /></span>
+
             <span className="Account-Link">Account</span>
 
-            <button type="button" onClick={toggleMenuDisplay} className="Menu-Button-Header"><FontAwesomeIcon icon={faBars} /></button>
-            
         </header>
-
-        <ul className="ScrollDown-Menu">
-          <li>Adopt</li>
-          <li>Animals</li>
-          <li>Organisations</li>
-          <li>Success Stories</li>
-          <li>News</li>
-        </ul>
-
     </>
   )
 }
