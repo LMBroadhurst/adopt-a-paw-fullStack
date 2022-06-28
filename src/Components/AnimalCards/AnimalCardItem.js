@@ -14,13 +14,12 @@ function AnimalCardItem(props) {
                         />
                 </div>
                 <div className='cardright'>
-                    <h5 className='animalcards_item_text'>
-                        <p>Hi, my name is:</p>
+                    <h1 className='animalcards_item_text'>Hi, my name is:
                         <p>Species:</p>
                         <p>Breed:</p>
                         <p>Age:</p>
                         <p>Location:</p>
-                    </h5>
+                    </h1>
                 </div>
             </div>
         </li>
