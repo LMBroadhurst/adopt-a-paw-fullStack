@@ -39,5 +39,19 @@ public class CustomerService {
 
     }
 
+    public void updateCustomer(Customer returnCustomer, Customer customerDetails){
+
+        returnCustomer.setFirstName(customerDetails.getFirstName());
+        returnCustomer.setLastName(customerDetails.getLastName());
+        returnCustomer.setAge(customerDetails.getAge());
+        returnCustomer.setLocation(customerDetails.getLocation());
+
+        customerRepo.save(returnCustomer);
+
+
+
+
+    }
+
 
 }

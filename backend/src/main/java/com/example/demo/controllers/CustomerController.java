@@ -48,6 +48,21 @@ public class CustomerController {
     }
 
 
+    @PutMapping("updateCustomer/{id}")
+    public void updateCustomer(@PathVariable("id") Long id,
+                               @RequestBody Customer customerDetails){
+
+        Customer returnCustomer = customerService.findCustomerByID(id);
+
+        customerService.updateCustomer(returnCustomer, customerDetails);
+
+
+
+
+
+    }
+
+
 
 
 
