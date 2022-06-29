@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './AnimalCardItem.css';
 
 function AnimalCardItem(props) {
@@ -10,7 +10,7 @@ function AnimalCardItem(props) {
                 <div className='cardleft'>
                         <img
                         className='animalcards_item_img'
-                        src={props.src}
+                        src={props.src} alt=""
                         />
                 </div>
                 <div className='cardright'>
