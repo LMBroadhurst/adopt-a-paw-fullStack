@@ -43,7 +43,7 @@ const Header = () => {
               </ul>
             </nav>
 
-            <span className="Account-Link">Account</span>
+            <Link to="/account"><span className="Account-Link">Account</span></Link>
 
             <button type="button" onClick={toggleMenuDisplay} className="Menu-Button-Header"><FontAwesomeIcon icon={faBars} /></button>
 
