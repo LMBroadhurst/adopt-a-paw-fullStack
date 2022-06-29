@@ -49,7 +49,9 @@ public class ApplicationController {
     public void updateApplicationStatus(@PathVariable("application_id") Long application_id,
                                         @PathVariable("application_type_id") Long application_type_id){
 
+        Application returnApplication = applicationService.findApplicationByID(application_id);
 
+        applicationService.updateApplicationStatus(returnApplication,application_type_id);
 
 
     }
