@@ -5,6 +5,8 @@ import com.example.demo.models.Application;
 import com.example.demo.repositories.ApplicationRepo;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ApplicationService {
 
@@ -16,6 +18,17 @@ public class ApplicationService {
         this.applicationRepo = applicationRepo;
         this.animalService = animalService;
         this.customerService = customerService;
+    }
+
+    public Application findApplicationByID(Long id){
+
+        return applicationRepo.findApplicationByID(id);
+    }
+
+    public List<Application> findAllApplications(){
+
+        return applicationRepo.findAll();
+
     }
 
     public void addNewApplication(Long application_type_id, Long animal_id, Long customer_id) throws Exception{
