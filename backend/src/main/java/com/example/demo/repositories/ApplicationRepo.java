@@ -11,6 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface ApplicationRepo extends JpaRepository<Application,Long> {
 
+
+    @Query(value = "SELECT * FROM applications WHERE id = ?", nativeQuery = true)
+    Application findApplicationByID(Long id);
+
+
     @Transactional
     @Modifying
     @Query(value = "INSERT INTO applications (application_type_id,animal_id,customer_id) VALUES (?1,?2,?3)"

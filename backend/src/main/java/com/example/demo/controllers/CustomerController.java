@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+//@RequestMapping("/customer")
+@CrossOrigin(origins = "http://localhost:3000")
 public class CustomerController {
 
     private CustomerService customerService;
@@ -43,6 +45,30 @@ public class CustomerController {
 
         customerService.addNewCustomer(customer);
 
+    }
+
+
+    @PutMapping("updateCustomer/{id}")
+    public void updateCustomer(@PathVariable("id") Long id,
+                               @RequestBody Customer customerDetails){
+
+        Customer returnCustomer = customerService.findCustomerByID(id);
+
+        customerService.updateCustomer(returnCustomer, customerDetails);
+
+
+
+
+
+    }
+
+    @DeleteMapping("deleteCustomer/{id}")
+    public void deleteCustomer(@PathVariable("id") Long id){
+
+        Customer returnCustomer = customerService.findCustomerByID(id);
+
+        customerService.deleteCustomerPreferences(id);
+        customerService.deleteCustomer(returnCustomer);
     }
 
 
