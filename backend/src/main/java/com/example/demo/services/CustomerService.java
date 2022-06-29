@@ -20,6 +20,18 @@ public class CustomerService {
         return customerRepo.findCustomerByID(id);
     }
 
+    public List<Customer> findAllCustomers(){
+
+        return customerRepo.findAll();
+
+    }
+
+    public void addNewCustomer(Customer customer) {
+
+        customerRepo.save(customer);
+
+    }
+
 
     public List<String> findCustomerPreferences(Long id) {
 
