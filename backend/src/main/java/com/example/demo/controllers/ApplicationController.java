@@ -56,6 +56,17 @@ public class ApplicationController {
 
     }
 
+    @DeleteMapping("deleteApplication/{id}")
+    public void deleteApplication(@PathVariable("id") Long id){
+
+        Application returnApplication = applicationService.findApplicationByID(id);
+
+        applicationService.deleteApplication(returnApplication);
+
+
+
+    }
+
 
 
 }

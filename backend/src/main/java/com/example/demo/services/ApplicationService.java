@@ -46,4 +46,9 @@ public class ApplicationService {
         applicationRepo.save(returnApplication);
 
     }
+
+    public void deleteApplication(Application returnApplication){
+
+        applicationRepo.delete(returnApplication);
+    }
 }
