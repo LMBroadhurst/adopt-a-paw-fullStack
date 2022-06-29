@@ -32,13 +32,13 @@
 }
 
 
-button {
+.carousel-button {
   text-decoration: none;
   display: inline-block;
   padding: 4px 12px;
 }
 
-button:hover {
+.carousel-button:hover {
   background-color: #24262b;
   color: white;
 }
@@ -65,12 +65,30 @@ button:hover {
   position: absolute;
   left: 10%;
   top: 50%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 12px;
+  color: white;
+}
+
+.leftButton:hover{
+  background-color: #24262b;
+  color: white;
 }
 
 .rightButton {
   position: absolute;
   right: 10%;
   top: 50%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 12px;
+  color: white;
+}
+
+.rightButton:hover{
+  background-color: #24262b;
+  color: white;
 }
 
 .center_table {
