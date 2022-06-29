@@ -1,11 +1,17 @@
 import React from 'react'
 import AnimalCards from '../AnimalCards/AnimalCards'
+import './AdoptPage.css'
 
 function AdoptPage() {
   return (
-    <div>
+    <>
+      <h1 className='adoptTitle'>
+        Adopt
+      </h1>
+      <div>
         <AnimalCards />
-    </div>
+      </div>
+    </>
   )
 }
 
