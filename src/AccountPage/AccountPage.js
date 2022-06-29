@@ -3,7 +3,7 @@ import "./AccountPageBasic.css";
 const AccountPage = () => {
   return (
     <>
-        <main>
+        <main id="Account-Main-Page">
             <section className="Animal-Image-Account">
                 <img src="" alt="" />
             </section>
@@ -15,9 +15,9 @@ const AccountPage = () => {
                     <button type="submit">Log In</button>
                 </form>
 
-                <button type="button">Forgot your password?</button>
+                <span className="Forgot-Password-Acc">Forgot your password?</span>
 
-                <button type="button">Create New Account</button>
+                <button className="New-Acc-BTN" type="button">Create New Account</button>
             </section>
         </main>
     </>
