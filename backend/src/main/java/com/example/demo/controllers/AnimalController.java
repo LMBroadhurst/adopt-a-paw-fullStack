@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/animal")
+@CrossOrigin(origins = "http://localhost:3000")
 public class AnimalController {
 
 
