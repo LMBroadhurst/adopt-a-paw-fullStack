@@ -53,5 +53,13 @@ public class CustomerService {
 
     }
 
+    public void deleteCustomerPreferences(Long id){
+        customerRepo.deleteCustomerPreferences(id);
+    }
+
+    public void deleteCustomer(Customer returnCustomer){
+        customerRepo.delete(returnCustomer);
+    }
+
 
 }
